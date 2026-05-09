@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Music, Music2, LogOut } from 'lucide-react';
 import { cn } from '../utils/cn';
-import song from '../../Little Things (Fairy Version) - oleksandr.mp3.mp3';
 
 const mode1Links = [
   { name: 'Gallery', id: 'gallery' },
@@ -124,7 +123,7 @@ export default function Navbar({ mode, onLogout }) {
 
       {/* Background Audio Element */}
       <audio ref={audioRef} loop>
-        <source src={song} type="audio/mpeg" />
+        <source src="/Little Things (Fairy Version) - oleksandr.mp3.mp3" type="audio/mpeg" />
       </audio>
     </motion.nav>
   );
