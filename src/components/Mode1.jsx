@@ -12,12 +12,12 @@ const compliments = [
 ];
 
 const galleryImages = [
-  "./IMG-20250829-WA0012.jpg",
-  "./IMG_0151.JPG",
-  "./IMG-20250829-WA0018.jpg",
-  "./IMG-20250829-WA0024.jpg",
-  "./IMG-20260222-WA0005.jpg",
-  "./IMG_0103.JPG"
+  "/IMG-20250829-WA0012.jpg",
+  "/IMG_0151.JPG",
+  "/IMG-20250829-WA0018.jpg",
+  "/IMG-20250829-WA0024.jpg",
+  "/IMG-20260222-WA0005.jpg",
+  "/IMG_0103.JPG"
 ];
 
 export default function Mode1() {
@@ -48,7 +48,7 @@ export default function Mode1() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-            src="./ChatGPT Image May 4, 2026, 08_33_53 PM.png"
+            src="/ChatGPT Image May 4, 2026, 08_33_53 PM.png"
             alt="Hero Background"
             className="w-full h-full object-cover opacity-30"
           />
@@ -60,7 +60,7 @@ export default function Mode1() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.2 }}
-            className="text-5xl md:text-8xl font-cinematic text-cream-highlight mb-6 tracking-wider text-shadow-glow"
+            className="text-4xl md:text-8xl font-cinematic text-cream-highlight mb-6 tracking-wider text-shadow-glow"
           >
             Happiesttt Birthdayyyy!!! <br /> Chitti <span className="text-luxury-gold">❤️</span>
           </motion.h1>
@@ -151,7 +151,7 @@ export default function Mode1() {
           >
             <div className="absolute -inset-4 bg-luxury-gold/20 blur-2xl rounded-full" />
             <img
-              src="./IMG_1939.PNG"
+              src="/IMG_1939.PNG"
               alt="Memory"
               className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/5] z-10"
             />
@@ -160,10 +160,10 @@ export default function Mode1() {
               initial={{ rotate: -10, x: -20 }}
               whileInView={{ rotate: -15, x: -40 }}
               viewport={{ once: true }}
-              className="absolute bottom-10 -left-10 w-48 h-56 bg-white p-3 shadow-2xl z-20"
+              className="absolute bottom-4 -left-2 md:bottom-10 md:-left-10 w-32 h-40 md:w-48 md:h-56 bg-white p-2 md:p-3 shadow-2xl z-20"
             >
               <div className="w-full h-full bg-gray-200 overflow-hidden">
-                <img src="./IMG_1941.PNG" alt="Small Memory" className="w-full h-full object-cover" />
+                <img src="/IMG_1941.PNG" alt="Small Memory" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </motion.div>

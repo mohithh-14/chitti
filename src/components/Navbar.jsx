@@ -59,7 +59,7 @@ export default function Navbar({ mode, onLogout }) {
     >
       <div className="max-w-4xl mx-auto px-4">
         <div className={cn(
-          "flex items-center justify-between px-6 py-4 rounded-full transition-all duration-500",
+          "flex items-center justify-between px-4 py-3 md:px-6 md:py-4 rounded-full transition-all duration-500",
           scrolled ? "glass-card bg-matte-black/40 shadow-2xl" : "bg-transparent"
         )}>
 
@@ -70,12 +70,12 @@ export default function Navbar({ mode, onLogout }) {
             <LogOut className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
           </button>
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 md:gap-8">
             {links.map((link) => (
               <button
                 key={link.name}
                 onClick={() => scrollTo(link.id)}
-                className="text-sm tracking-[0.2em] uppercase text-white/70 hover:text-white transition-colors relative group"
+                className="text-xs md:text-sm tracking-widest md:tracking-[0.2em] uppercase text-white/70 hover:text-white transition-colors relative group"
               >
                 {link.name}
                 <span className={cn(

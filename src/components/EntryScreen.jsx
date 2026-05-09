@@ -59,7 +59,7 @@ export default function EntryScreen({ onUnlock }) {
               transition={{ delay: 0.5, duration: 1 }}
               className="mb-8 text-center"
             >
-              <h1 className="text-3xl md:text-5xl font-cinematic text-cream-highlight mb-4 text-shadow-glow">
+              <h1 className="text-2xl md:text-5xl font-cinematic text-cream-highlight mb-4 text-shadow-glow">
                 Happiesttt Birthdayyyy!!! <span className="text-luxury-gold">❤️</span>
               </h1>
               <p className="text-white/50 tracking-widest text-sm uppercase">Enter the key to unlock</p>
@@ -82,7 +82,7 @@ export default function EntryScreen({ onUnlock }) {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-center text-xl tracking-[0.5em] text-cream-highlight placeholder:text-white/20 focus:outline-none focus:border-luxury-gold/50 focus:bg-white/10 transition-all gold-glow"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-center text-xl tracking-widest md:tracking-[0.5em] text-cream-highlight placeholder:text-white/20 focus:outline-none focus:border-luxury-gold/50 focus:bg-white/10 transition-all gold-glow"
                   autoComplete="off"
                   autoFocus
                 />

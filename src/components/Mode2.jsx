@@ -3,16 +3,16 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { cn } from '../utils/cn';
 
 const timelineEvents = [
-  { date: "Mar 2024", title: "The First Photo", img: "./Screenshot_2026-03-15-18-24-43-64_1c337646f29875672b5a61192b9010f9.jpg" },
-  { date: "Mar 2025", title: "Together", img: "./Snapchat-1808586553 (1).jpg" },
-  { date: "Apr 2026", title: "First of US", img: "./IMG_0160.JPG" },
-  { date: "Present", title: "Still Falling", img: "./20260507_084454.jpg.jpeg" }
+  { date: "Mar 2024", title: "The First Photo", img: "/Screenshot_2026-03-15-18-24-43-64_1c337646f29875672b5a61192b9010f9.jpg" },
+  { date: "Mar 2025", title: "Together", img: "/Snapchat-1808586553 (1).jpg" },
+  { date: "Apr 2026", title: "First of US", img: "/IMG_0160.JPG" },
+  { date: "Present", title: "Still Falling", img: "/20260507_084454.jpg.jpeg" }
 ];
 
 const polaroids = [
-  { img: "./IMG_0088.JPG", rot: -10, x: -50, y: 20 },
-  { img: "./IMG20260404133753.jpg", rot: 15, x: 50, y: -20 },
-  { img: "./IMG_1940.PNG", rot: -5, x: 0, y: 50 },
+  { img: "/IMG_0088.JPG", rot: -10, x: -50, y: 20 },
+  { img: "/IMG20260404133753.jpg", rot: 15, x: 50, y: -20 },
+  { img: "/IMG_1940.PNG", rot: -5, x: 0, y: 50 },
 ];
 
 export default function Mode2() {
@@ -41,7 +41,7 @@ export default function Mode2() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 15, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-            src="./IMG20260404133753.jpg"
+            src="/IMG20260404133753.jpg"
             alt="Hero Background"
             className="w-full h-full object-cover object-[50%_45%] opacity-40 brightness-75 sepia-[0.3]"
           />
@@ -133,8 +133,7 @@ export default function Mode2() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1.2, delay: i * 0.2 }}
                 whileHover={{ scale: 1.1, zIndex: 40, rotate: 0 }}
-                className="absolute bg-white p-4 shadow-2xl rounded-sm cursor-pointer transition-colors hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-20"
-                style={{ width: '220px', height: '260px' }}
+                className="absolute bg-white p-2 md:p-4 shadow-2xl rounded-sm cursor-pointer transition-colors hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-20 w-[150px] h-[180px] md:w-[220px] md:h-[260px]"
               >
                 <div className="w-full h-[80%] bg-gray-200 overflow-hidden relative">
                   <img src={p.img} alt="Polaroid" className="w-full h-full object-cover sepia-[0.3]" />
