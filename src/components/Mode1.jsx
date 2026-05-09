@@ -48,7 +48,7 @@ export default function Mode1() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
-            src="./IMG-20250829-WA0014.jpg"
+            src="./ChatGPT Image May 4, 2026, 08_33_53 PM.png"
             alt="Hero Background"
             className="w-full h-full object-cover opacity-30"
           />
